@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await fetch("http://localhost:5000/send/email", {
+      const response = await fetch("https://kavita-portfolio.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
