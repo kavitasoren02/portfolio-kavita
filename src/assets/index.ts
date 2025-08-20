@@ -13,7 +13,7 @@ import css from './tech/css.png';
 import reacts from './tech/reactjs.png';
 import git from './tech/git.png';
 import github from './github.png';
-import javascript from './tech/javascript.webp';
+import javascript from './tech/javascript.png';
 import tailwind from './tech/tailwind.png';
 import redux from './tech/redux.png';
 import mongodb from './tech/mongodb.png';
