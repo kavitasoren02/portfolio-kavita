@@ -9,7 +9,7 @@ import react from './reactjs.png';
 import bcaIcon from './bcaIcon.png';
 import mcaIcon from './mcaIcon.jpg';
 import html from './tech/html.png';
-import css from './tech/css.jpg';
+import css from './tech/css.png';
 import reacts from './tech/reactjs.png';
 import git from './tech/git.png';
 import github from './github.png';
