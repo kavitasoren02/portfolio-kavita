@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import { styles } from "../../styles.ts";
-import { serviceLinks } from "../../constants/index.ts";
-import SectionWrapper from "../../hoc/SectionWrapper.tsx";
-import { fadeIn, textVariant } from "../../utils/motion.ts";
-import ServiceCard from "./ServiceCard.tsx"; 
+import { styles } from "../../styles";
+import { serviceLinks } from "../../constants/index";
+import SectionWrapper from "../../hoc/SectionWrapper";
+import { fadeIn, textVariant } from "../../utils/motion";
+import ServiceCard from "./ServiceCard"; 
 
 const About: React.FC = () => {
   return (
