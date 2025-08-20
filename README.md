@@ -1,69 +1,86 @@
-# React + TypeScript + Vite
+# **Kavita-Portfolio**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my **Portfolio Website**, a digital space where I showcase my work, skills, and passion for building impactful web experiences. Built with modern technologies like React + TypeScript + Vite, this site is fast, responsive, and easy to maintain.
 
-Currently, two official plugins are available:
+## **✨ Portfolio Highlights**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎞️ Smooth Animations using Framer Motion for page transitions and hover effects
 
-## Expanding the ESLint configuration
+- 🌙 Dark Mode Toggle with animated switch
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 📱 Responsive Design across all devices
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- 🖼️ Interactive Project Cards with hover reveals
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- 📬 Animated Contact Form with real-time validation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- 📄 Resume Download Button with hover animation
+
+- 🧹 Clean Codebase powered by TypeScript + ESLint
+
+## **Tech Stack**
+
+### **Frontend**
+- React (Vite)
+- HTML5 Tailwind CSS
+- fetch for API requests
+- React Router 
+
+### **Backend**
+- Node.js
+- Express.js
+- dotenv for environment configuration
+- Nodemailer
+
+# **Installation**
+
+- Install the required packages by running the following command in your terminal:
+
+```bash
+git clone https://github.com/kavitasoren02/portfolio-kavita
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Backend
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd backend
 ```
+
+```bash
+npm install
+```
+
+```bash
+nodemon
+```
+
+## **Setup Instructions for .env file**
+
+```env
+
+NODE_ENV=
+
+PORT=
+
+```
+
+## Frontend
+
+```bash
+cd Frontend
+
+```
+
+```bash
+npm install
+```
+
+```bash
+npm run dev
+```
+
+# **Author**
+
+Kavita(kavitasoren02)
+
+[https://github.com/kavitasoren02](https://github.com/kavitasoren02)
