@@ -42,7 +42,8 @@
     "typescript-eslint": "^8.39.1",
     "vite": "^7.1.2",
     "rollup": "4.24.0",
-    "lightningcss": "1.25.1"
+    "lightningcss": "1.25.1",
+    "@tailwindcss/oxide": "4.0.6"
 
   }
 }
