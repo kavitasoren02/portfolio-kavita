@@ -41,7 +41,7 @@ const Contact: React.FC = () => {
     } finally {
       setLoading(false);
     }
-  };
+  };``
 
   return (
     <div
