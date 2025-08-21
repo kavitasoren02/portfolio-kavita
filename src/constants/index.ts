@@ -5,17 +5,17 @@ import {
   backend,
   bcaIcon,
   mcaIcon,
-  css,
+  // css,
   docker,
   git,
-  html,
-  javascript,
+  // html,
+  // javascript,
   mongodb,
   nodejs,
   reacts,
   redux,
   tailwind,
-  typescript,
+  // typescript,
   project1,
   project2,
   project3,
@@ -137,22 +137,22 @@ export const academicsLink: AcademicsLink[] = [
 ];
 
 export const techLink: TechLink[] = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
+  // {
+  //   name: "HTML 5",
+  //   icon: html,
+  // },
+  // {
+  //   name: "CSS 3",
+  //   icon: css,
+  // },
+  // {
+  //   name: "JavaScript",
+  //   icon: javascript,
+  // },
+  // {
+  //   name: "TypeScript",
+  //   icon: typescript,
+  // },
   {
     name: "ReactJS",
     icon: reacts,
