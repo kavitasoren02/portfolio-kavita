@@ -23,11 +23,14 @@ const Contact: React.FC = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await fetch("https://kavita-portfolio.onrender.com/send/email", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
+      const response = await fetch(
+        "https://kavita-portfolio.onrender.com/send/email",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(form),
+        }
+      );
 
       if (response.ok) {
         alert("Email Sent Successfully!");
@@ -41,7 +44,8 @@ const Contact: React.FC = () => {
     } finally {
       setLoading(false);
     }
-  };``
+  };
+  ``;
 
   return (
     <div
@@ -86,11 +90,11 @@ const Contact: React.FC = () => {
             <textarea
               rows={7}
               name="message"
-              placeholder="Your Message"
               value={form.message}
               onChange={handleChange}
-              className="bg-[#151030] py-4 px-6 placeholder:text-gray-400 text-white rounded-lg border-none font-medium "
-            />
+              placeholder="Your Message"
+              className="bg-[#151030] py-4 px-6 placeholder:text-[#aaa6c3] text-white rounded-lg border-none font-medium "
+            ></textarea>
           </label>
 
           <button
