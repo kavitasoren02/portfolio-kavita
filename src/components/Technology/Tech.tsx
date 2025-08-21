@@ -4,7 +4,7 @@ import BallCanvas from './Ball';
 import SectionWrapper  from '../../hoc/SectionWrapper';
 import { techLink, type TechLink } from '../../constants';
 
-const isAndroid = /Android/i.test(navigator.userAgent);
+const isAndroid = /Android|Adr/i.test(navigator.userAgent);
 
 const filteredTechLinks = isAndroid ? techLink.slice(0, 7) : techLink;
 
