@@ -19,7 +19,7 @@ import {
   project1,
   project2,
   project3,
-  project4
+  project4,
 } from "../assets";
 
 export interface Navlink {
@@ -58,15 +58,15 @@ export interface ProjectLink {
 }
 
 export interface StarProps {
-  color?: string,
-  count?: number,
-  radius?: number,
+  color?: string;
+  count?: number;
+  radius?: number;
 }
 
 export interface ContactProps {
-  name: string,
-  email: string,
-  message: string,
+  name: string;
+  email: string;
+  message: string;
 }
 
 export const navLinks: Navlink[] = [
@@ -137,42 +137,13 @@ export const academicsLink: AcademicsLink[] = [
 ];
 
 export const techLink: TechLink[] = [
-
   {
-    name: "ReactJS",
-    icon: reacts,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "NodeJS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Git",
-    icon: git,
-  },
-  {
-    name: "Docker",
-    icon: docker,
-  },
-    {
     name: "HTML 5",
     icon: html,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "Tailwind CSS",
+    icon: tailwind,
   },
   {
     name: "JavaScript",
@@ -182,13 +153,44 @@ export const techLink: TechLink[] = [
     name: "TypeScript",
     icon: typescript,
   },
+  {
+    name: "ReactJS",
+    icon: reacts,
+  },
+
+  {
+    name: "NodeJS",
+    icon: nodejs,
+  },
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  },
+
+  {
+    name: "CSS 3",
+    icon: css,
+  },
+  {
+    name: "Redux Toolkit",
+    icon: redux,
+  },
+  {
+    name: "Git",
+    icon: git,
+  },
+
+  {
+    name: "Docker",
+    icon: docker,
+  },
 ];
 
 export const projectLink: ProjectLink[] = [
   {
     name: "Blog Vibe",
     description:
-"This blog web application supports three roles: Admin (manages users and content), Author (writes and manages blogs), and User (reads, likes, and comments on posts). Built with React.js, Node.js, and MongoDB, it showcases role-based access, content management, and interactive features.",
+      "This blog web application supports three roles: Admin (manages users and content), Author (writes and manages blogs), and User (reads, likes, and comments on posts). Built with React.js, Node.js, and MongoDB, it showcases role-based access, content management, and interactive features.",
     tags: [
       {
         name: "reactjs",
@@ -248,10 +250,10 @@ export const projectLink: ProjectLink[] = [
     image: project3,
     source_code_link: "https://github.com/kavitasoren02/news-api",
   },
-    {
+  {
     name: "Book My Show",
     description:
-    " A movie application built with React.js, offering users a platform to browse, search, and explore movies in detail.The app features dynamic listings,and detailed movie pages. Administrators can manage movie listings through a dedicated dashboard, allowing them to add, edit,movies effortlessly.",
+      " A movie application built with React.js, offering users a platform to browse, search, and explore movies in detail.The app features dynamic listings,and detailed movie pages. Administrators can manage movie listings through a dedicated dashboard, allowing them to add, edit,movies effortlessly.",
     tags: [
       {
         name: "reactjs",
@@ -274,11 +276,11 @@ export const projectLink: ProjectLink[] = [
 export const starProps: StarProps = {
   color: "#f272c8",
   count: 5000,
-  radius: 1.2
+  radius: 1.2,
 };
 
 export const contactProps: ContactProps = {
   name: "",
   email: "",
   message: " ",
-}
+};
