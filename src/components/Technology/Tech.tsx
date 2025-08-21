@@ -8,7 +8,7 @@ const Tech: React.FC = () => {
   return (
     <div className='flex flex-row flex-wrap justify-center gap-10'>
         {techLink.map((tech: TechLink) => (
-            <div className='w-28 h-28' key={tech.name}>
+            <div className='w-28 h-28' key={tech.icon}>
                 <BallCanvas icon={tech.icon} />
                 </div>
         ))}
