@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
     location.pathname === "/" && !scrolled ? "bg-transparent" : "bg-black";
   return (
     <nav
-      className={`${styles.paddingX} fixed pt-2 top-0 left-0 w-full h-[60px] z-50 transition-colors duration-300 ${handlenavbrBg}`}
+      className={`${styles.paddingX} lg:ml-[150px] fixed pt-2 top-0 left-0 w-full h-[60px] z-50 transition-colors duration-300 ${handlenavbrBg}`}
     >
       <div className="w-full flex items-center justify-between max-w-7xl ">
         <Link
@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
               key={nav.id}
               className={`${
                 active === nav.title ? "text-white " : "text-[#9791a2]"
-              } hover:text-white lg:text-[23px] md:text-[18px] font-medium cursor-pointer`}
+              } hover:text-white text-[23px] md:text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
