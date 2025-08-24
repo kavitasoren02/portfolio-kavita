@@ -24,7 +24,7 @@ const Home: React.FC = () => {
           {/* <div className="w-1 sm:h-80 h-40 violet-gradient" /> */}
         </div>
         {/* Home Content*/}
-        <div className="mt-60">
+        <div className="mt-35">
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="glow">Kavita</span>
           </h1>
