@@ -68,3 +68,13 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.glow {
+  color: #ffeede; /* a bit deeper than pure white-orange */
+  text-shadow:
+    0 0 3px rgba(230, 95, 83, 0.65),   /* deeper orange */
+    0 0 6px rgba(230, 135, 90, 0.55),  /* soft orange */
+    0 0 10px rgba(230, 60, 150, 0.45), /* deeper pink */
+    0 0 15px rgba(230, 90, 90, 0.35);  /* soft coral */
+}
+
+

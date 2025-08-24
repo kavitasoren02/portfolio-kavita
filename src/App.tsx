@@ -17,9 +17,10 @@ function App() {
         <Home />
         <div className="bg-black min-h-screen w-full">
           <About />
-          <Academics />
           <Tech />
           <Project />
+          <Academics />
+
           <div className="relative z-0 bg-primary">
             {/* Contact Section */}
             <div className="relative z-10">

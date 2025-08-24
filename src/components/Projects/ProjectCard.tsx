@@ -19,10 +19,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
         tiltMaxAngleY={45}
         scale={1}
         transitionSpeed={450}
-        className="bg-[#151030] p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-[#151030] p-5 rounded-2xl sm:w-[340px] w-full"
       >
         {/* Project Image */}
-        <div className="relative w-full h-[230px]">
+        <div className="relative w-full h-[200px]">
           <img
             src={project.image}
             alt="project_image"

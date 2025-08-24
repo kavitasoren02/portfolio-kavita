@@ -24,19 +24,19 @@ const Navbar: React.FC = () => {
     <nav
       className={`${styles.paddingX} fixed pt-2 top-0 left-0 w-full h-[60px] z-50 transition-colors duration-300 ${handlenavbrBg}`}
     >
-      <div className="w-full flex items-center justify-between max-w-7xl mx-auto">
+      <div className="w-full flex items-center justify-between max-w-7xl ">
         <Link
           to="/"
-          className="flex items-center gap-2"
+          className="flex items-center gap-2 ml-5 sm:ml-10 md:ml-5 lg:ml-43"
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex">
+          <img src={logo} alt="logo" className="w-9 h-9 object-contain " />
+          <p className="text-white font-bold cursor-pointer flex  text-[24px] sm:text-[30px] md:text-[30px] lg:text-[40px]">
             Kavita &nbsp;{" "}
-            <span className="sm:block hidden">| FullStack Developer</span>
+            {/* <span className="sm:block hidden">| FullStack Developer</span> */}
           </p>
         </Link>
 
@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
               key={nav.id}
               className={`${
                 active === nav.title ? "text-white " : "text-[#9791a2]"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              } hover:text-white lg:text-[23px] md:text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>

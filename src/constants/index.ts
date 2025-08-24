@@ -75,12 +75,12 @@ export const navLinks: Navlink[] = [
     title: "About",
   },
   {
-    id: "academics",
-    title: "Academics",
-  },
-  {
     id: "projects",
     title: "Projects",
+  },
+    {
+    id: "academics",
+    title: "Academics",
   },
   {
     id: "contacts",

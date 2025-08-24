@@ -9,7 +9,7 @@ import ProjectCard from "./ProjectCard";
 
 const Project: React.FC = () => {
   return (
-    <>
+    <div className="py-10 px-6">
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-white`}>My work</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
@@ -36,7 +36,7 @@ const Project: React.FC = () => {
             />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
