@@ -6,6 +6,7 @@ import { serviceLinks } from "../../constants/index";
 import SectionWrapper from "../../hoc/SectionWrapper";
 import { fadeIn, textVariant } from "../../utils/motion";
 import ServiceCard from "./ServiceCard"; 
+import IconsCard from './Icons';
 
 const About: React.FC = () => {
   return (
@@ -28,6 +29,9 @@ const About: React.FC = () => {
         real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
 
+      <div className="mt-10 ">
+        <IconsCard/>
+      </div>
       {/* Service Cards */}
       <div className="mt-20 flex flex-wrap gap-10 justify-center">
         {serviceLinks.map((service, index) => (
