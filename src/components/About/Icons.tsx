@@ -5,7 +5,7 @@ import { GrDocumentText } from "react-icons/gr";
 
 const Icons: React.FC = () => {
   return (
-    <div className="flex gap-6">
+    <div className="flex gap-2 lg:gap-6">
       {/* LinkedIn */}
       <a
         href="https://www.linkedin.com/in/kavita-soren-663181217/"
