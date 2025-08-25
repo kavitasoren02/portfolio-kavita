@@ -29,9 +29,12 @@ const About: React.FC = () => {
         real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
 
-      <div className="mt-10 ">
+      {/* Icons Card*/}
+      <motion.div 
+      variants={fadeIn("left","spring", 0.1, 1)}
+      className="mt-10 ">
         <IconsCard/>
-      </div>
+      </motion.div>
       {/* Service Cards */}
       <div className="mt-20 flex flex-wrap gap-10 justify-center">
         {serviceLinks.map((service, index) => (

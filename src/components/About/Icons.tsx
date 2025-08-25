@@ -31,7 +31,7 @@ const Icons: React.FC = () => {
       </a>
 
       {/* Twitter */}
-      <a
+      {/* <a
         href="https://x.com/soren_kavita"
         target="_blank"
         rel="noopener noreferrer"
@@ -40,7 +40,7 @@ const Icons: React.FC = () => {
                    transition-all duration-300"
       >
         <FaTwitter />
-      </a>
+      </a> */}
 
       {/* Resume */}
       <a

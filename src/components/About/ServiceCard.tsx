@@ -16,7 +16,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ serviceLink, index }) => {
   return (
     <Tilt className="xs:w-[250px] w-full flex-1">
       <motion.div
-        variants={fadeIn("right","spring", index * 0.5 ,0.75 )}
+        variants={fadeIn("right", "spring", 0.1, 1)}
         className="w-full rounded-[20px] borderAnimation shadow-card"
       >
         <div

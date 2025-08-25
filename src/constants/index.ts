@@ -55,6 +55,7 @@ export interface ProjectLink {
   }[];
   image: string;
   source_code_link: string;
+  demo_link: string;
 }
 
 export interface StarProps {
@@ -190,7 +191,7 @@ export const projectLink: ProjectLink[] = [
   {
     name: "Blog Vibe",
     description:
-      "This blog web application supports three roles: Admin (manages users and content), Author (writes and manages blogs), and User (reads, likes, and comments on posts). Built with React.js, Node.js, and MongoDB, it showcases role-based access, content management, and interactive features.",
+      "This blog web application supports three roles: Admin(manages users and content), Author(writes and manages blogs), and User(reads, likes, and comments on posts). Built with React.js, Node.js, and MongoDB, it showcases role-based access, content management, and interactive features.",
     tags: [
       {
         name: "reactjs",
@@ -207,6 +208,7 @@ export const projectLink: ProjectLink[] = [
     ],
     image: project1,
     source_code_link: "https://github.com/kavitasoren02/BlogVibe",
+    demo_link: "https://blogvibeweb.netlify.app/",
   },
   {
     name: "Text-Utils",
@@ -228,6 +230,7 @@ export const projectLink: ProjectLink[] = [
     ],
     image: project2,
     source_code_link: "https://github.com/kavitasoren02/textutil",
+    demo_link: "https://textutil02.netlify.app/",
   },
   {
     name: "News App",
@@ -249,6 +252,7 @@ export const projectLink: ProjectLink[] = [
     ],
     image: project3,
     source_code_link: "https://github.com/kavitasoren02/news-api",
+    demo_link: "https://github.com/kavitasoren02/news-api",
   },
   {
     name: "Book My Show",
@@ -270,6 +274,7 @@ export const projectLink: ProjectLink[] = [
     ],
     image: project4,
     source_code_link: "https://github.com/kavitasoren02/bookmyshowFrontend",
+    demo_link: "https://bookmyshow-kavi.netlify.app/",
   },
 ];
 

@@ -34,9 +34,9 @@ const Home: React.FC = () => {
             A passionate <span className="glow">MERN Stack</span> and{" "}
             <span className="glow">Full-Stack Developer</span>{" "}
             <br className="sm:block hidden" />
-            who loves building scalable web apps
-            <br className="sm:block hidden" />
-            and modern user experiences.
+            who loves building scalable web apps and 
+            <br className="sm:block hidden" /> modern user experiences.
+            <br className="sm:block hidden" />{" "}
           </p>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import { styles } from "../../styles";
@@ -9,8 +9,12 @@ const Navbar: React.FC = () => {
   const [active, setActive] = useState<string>("");
   const [toggle, setToggle] = useState<boolean>(false);
   const [scrolled, setScrolled] = useState<boolean>(false);
+  const [width, setWidth] = useState<number>(0);
   const location = useLocation();
+  const ref = useRef<HTMLDivElement | null>(null);
 
+  console.log(width);
+  
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 100);
 
@@ -18,13 +22,30 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (ref.current) {
+      setWidth(ref.current.offsetWidth);
+    }
+    const handleResize = () => {
+      if (ref.current) {
+        setWidth(ref.current.offsetWidth);
+      }
+      console.log(ref);
+      
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize)
+  }, []);
+
+
   const handlenavbrBg =
     location.pathname === "/" && !scrolled ? "bg-transparent" : "bg-black";
   return (
     <nav
-      className={`${styles.paddingX} lg:ml-[70px]  fixed pt-2 top-0 left-0 w-full h-[60px] z-50 transition-colors duration-300 ${handlenavbrBg}`}
+      className={`fixed pt-2 top-0 left-0 w-full h-[60px] z-50 transition-colors duration-300 ${handlenavbrBg}`}
+      ref={ref}
     >
-      <div className="w-full flex items-center justify-between max-w-7xl mx-auto">
+      <div className="flex items-center justify-between max-w-[1200px] mx-auto w-full px-12">
         <Link
           to="/"
           className="flex items-center gap-2"
@@ -40,7 +61,7 @@ const Navbar: React.FC = () => {
         </Link>
 
         {/* Desktop Menu */}
-        <ul className="list-none hidden sm:flex flex-row gap-10 lg:mr-[75px]">
+        <ul className="list-none hidden sm:flex flex-row  justify-end gap-10 ">
           {navLinks.map((nav: Navlink) => (
             <li
               key={nav.id}
@@ -55,7 +76,7 @@ const Navbar: React.FC = () => {
         </ul>
 
         {/* Mobile Menu */}
-        <div className="sm:hidden flex flex-1 justify-end items-center relative">
+        { width < 768 && <div className="sm:hidden flex flex-1 justify-end items-center relative">
           {/* Menu / Close Icon */}
           <img
             src={toggle ? close : menu}
@@ -88,6 +109,7 @@ const Navbar: React.FC = () => {
             </ul>
           </div>
         </div>
+}
       </div>
     </nav>
   );
