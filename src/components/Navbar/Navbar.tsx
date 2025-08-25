@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
         </Link>
 
         {/* Desktop Menu */}
-        <ul className="list-none hidden sm:flex flex-row gap-10 mr-[70px]">
+        <ul className="list-none hidden sm:flex flex-row gap-10 lg:mr-[75px]">
           {navLinks.map((nav: Navlink) => (
             <li
               key={nav.id}
