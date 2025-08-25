@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
               key={nav.id}
               className={`${
                 active === nav.title ? "text-white " : "text-[#9791a2]"
-              } hover:text-white text-[23px] md:text-[18px] lg:text-[20px] font-medium cursor-pointer lg:mr-[100px] gap-10`}
+              } hover:text-white text-[23px] md:text-[18px] lg:text-[20px] font-medium cursor-pointer lg:mr-[100px] gap-4`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
