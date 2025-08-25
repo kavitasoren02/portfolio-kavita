@@ -22,21 +22,20 @@ const Navbar: React.FC = () => {
     location.pathname === "/" && !scrolled ? "bg-transparent" : "bg-black";
   return (
     <nav
-      className={`${styles.paddingX} lg:ml-[80px] fixed pt-2 top-0 left-0 w-full h-[60px] z-50 transition-colors duration-300 ${handlenavbrBg}`}
+      className={`${styles.paddingX} fixed pt-2 top-0 left-0 w-full h-[60px] z-50 transition-colors duration-300 ${handlenavbrBg}`}
     >
-      <div className="w-full flex items-center justify-between max-w-7xl ">
+      <div className="w-full flex items-center justify-between max-w-7xl mx-auto">
         <Link
           to="/"
-          className="flex items-center gap-2 sm:ml-10 md:ml-5 lg:ml-45"
+          className="flex items-center gap-2"
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain " />
-          <p className="text-white font-bold cursor-pointer flex  text-[24px] sm:text-[30px] md:text-[30px] lg:text-[40px]">
-            Kavita &nbsp;{" "}
-            {/* <span className="sm:block hidden">| FullStack Developer</span> */}
+          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          <p className="text-white font-bold cursor-pointer flex text-[24px] sm:text-[30px] md:text-[30px] lg:text-[40px]">
+            Kavita
           </p>
         </Link>
 
