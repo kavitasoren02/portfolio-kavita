@@ -40,13 +40,13 @@ const Navbar: React.FC = () => {
         </Link>
 
         {/* Desktop Menu */}
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden sm:flex flex-row gap-10 mr-[70px]">
           {navLinks.map((nav: Navlink) => (
             <li
               key={nav.id}
               className={`${
                 active === nav.title ? "text-white " : "text-[#9791a2]"
-              } hover:text-white text-[23px] md:text-[18px] lg:text-[20px] font-medium cursor-pointer lg:mr-[100px] gap-4`}
+              } hover:text-white text-[23px] md:text-[18px] lg:text-[20px] font-medium cursor-pointer `}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
