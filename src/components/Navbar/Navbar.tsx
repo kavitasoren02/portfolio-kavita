@@ -22,12 +22,12 @@ const Navbar: React.FC = () => {
     location.pathname === "/" && !scrolled ? "bg-transparent" : "bg-black";
   return (
     <nav
-      className={`${styles.paddingX} lg:ml-[120px] fixed pt-2 top-0 left-0 w-full h-[60px] z-50 transition-colors duration-300 ${handlenavbrBg}`}
+      className={`${styles.paddingX} lg:ml-[140px] fixed pt-2 top-0 left-0 w-full h-[60px] z-50 transition-colors duration-300 ${handlenavbrBg}`}
     >
       <div className="w-full flex items-center justify-between max-w-7xl ">
         <Link
           to="/"
-          className="flex items-center gap-2 ml-5 sm:ml-10 md:ml-5 lg:ml-43"
+          className="flex items-center gap-2 sm:ml-10 md:ml-5 lg:ml-45"
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
