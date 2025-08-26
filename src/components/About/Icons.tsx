@@ -12,7 +12,7 @@ const Icons: React.FC = () => {
         target="_blank"
         rel="noopener noreferrer"
         className="w-14 h-14 flex items-center justify-center rounded-full bg-gray-800 text-white text-2xl 
-                   hover:bg-blue-600 hover:scale-110 hover:shadow-lg hover:shadow-blue-400/50 
+                   hover:bg-blue-700 hover:scale-110 hover:shadow-lg hover:shadow-blue-400/50 
                    transition-all duration-300"
       >
         <FaLinkedin />
