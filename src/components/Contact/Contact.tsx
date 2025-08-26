@@ -93,7 +93,7 @@ const Contact: React.FC = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="Your Message"
-              className="bg-[#151030] py-4 px-6 placeholder:text-[#aaa6c3] text-white rounded-lg border-none font-medium "
+              className="bg-[#151030] py-4 pl-3 placeholder:text-[#aaa6c3] text-white rounded-lg border-none font-medium "
             ></textarea>
           </label>
 

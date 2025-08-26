@@ -287,5 +287,5 @@ export const starProps: StarProps = {
 export const contactProps: ContactProps = {
   name: "",
   email: "",
-  message: " ",
+  message: "",
 };
